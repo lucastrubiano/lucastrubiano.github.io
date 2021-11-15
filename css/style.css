@@ -1,40 +1,4 @@
-:root{
-    --violeta-gc: #800080;
-}
 
-*{
-    margin:  0px;
-    padding: 0px;
-    /* font-family: 'Roboto', sans-serif; */
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-}
-
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-body {
-    margin:  0px !important;
-    padding: 0px !important;
-
-    padding-top: 3rem;
-    /* padding-bottom: 3rem; */
-    color: #5a5a5a;
-}
-
-/* Resaltado en blanco de los iconos de redes sociales */
-.social:hover{
-    color: white !important;
-}
-
-.profileimg{
-    background-image: url(imgs/profile.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-  
 /* MARKETING CONTENT
 -------------------------------------------------- */
   
@@ -50,7 +14,6 @@ body {
     margin-right: .75rem;
     margin-left: .75rem;
 }
-  
   
 /* Featurettes
 ------------------------- */
