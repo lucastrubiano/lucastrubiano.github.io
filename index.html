@@ -17,8 +17,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 	<!-- Linkeo mi propio CSS -->
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="style.css">
 
 	<!-- Este estilo es para acomodar el texto 500x500 en la imagen -->
 	<style>
@@ -40,12 +39,13 @@
 
 	<!-- Linkeo mi propio JS -->
 	<script src="js/copyText.js"></script>
+	<script src="js/index.js"></script>
 
 </head>
 <body>
 
 	<!-- Header de la pagina -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<a class="navbar-brand" href="#homepage">Portfolio</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -55,27 +55,27 @@
 			
 			<ul class="navbar-nav mr-auto">
 
-				<li class="nav-item active">
-					<a class="nav-link" href="#homepage">Presentación <span class="sr-only">(current)</span></a>
+				<li class="nav-item active" onclick="updateActiveNav(this)">
+					<a class="nav-link" href="#presentationpage">Presentación</a>
 				</li>
 
-				<li class="nav-item">
-					<a class="nav-link" href="#">Habilidades</a>
+				<li class="nav-item" onclick="updateActiveNav(this)">
+					<a class="nav-link" href="#skillspage">Habilidades</a>
 				</li>
 
-				<li class="nav-item">
-					<a class="nav-link" href="#">Experiencia</a>
+				<li class="nav-item" onclick="updateActiveNav(this)">
+					<a class="nav-link" href="#experiencepage">Experiencia</a>
 				</li>
 				
-				<li class="nav-item">
-					<a class="nav-link" href="#">Formación</a>
+				<li class="nav-item" onclick="updateActiveNav(this)">
+					<a class="nav-link" href="#studypage">Formación</a>
 				</li>
 				
-				<li class="nav-item">
-					<a class="nav-link" href="#">Proyectos</a>
+				<li class="nav-item" onclick="updateActiveNav(this)">
+					<a class="nav-link" href="#projectspage">Proyectos</a>
 				</li>
 
-				<li class="nav-item">
+				<li class="nav-item" onclick="updateActiveNav(this)">
 				  <a class="nav-link" href="#contactpage">Contacto</a>
 				</li>
 
@@ -114,12 +114,20 @@
 	</nav>
 
 	<section class="py-4 text-center container-fluid bg-dark" id="homepage">
+
 		<br>
 
 		<div class="row py-lg-5">
 			<div class="col-lg-6 col-md-8 mx-auto">
 
-				<svg class="bd-placeholder-img rounded-circle profileimg" width="150" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+				<svg class="bd-placeholder-img rounded-circle profileimg"
+					width="150" 
+					height="150" 
+					xmlns="http://www.w3.org/2000/svg" 
+					role="img" 
+					aria-label="Placeholder: 140x140" 
+					preserveAspectRatio="xMidYMid slice" 
+					focusable="false">
 				</svg>
 
 				<br><br>
@@ -152,9 +160,15 @@
 				<p class="lead text-muted">
 					<i>Mendoza, Argentina</i>
 				</p>
-				<a id="mymail" class="badge badge-primary" onclick="copyToClipboard('#mymail')" data-toggle="popover" data-placement="right" data-content="Correo copiado!">
+				<a 	id="mymail"
+					class="badge badge-primary mail pop"
+					onclick="copyToClipboard('#mymail')"
+					data-toggle="popover"
+					data-placement="right"
+					data-content="Correo copiado!">
 					lucas.trubiano@gmail.com
 				</a>
+				<p id="presentationpage"></p>
 			</div>
 		</div>
 	</section>
@@ -202,32 +216,70 @@
 		<div class="container marketing">
 
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h1>Presentación</h1>
-					<p>
-						Soy estudiante avanzado de Ing. en Mecatrónica con especialización en desarrollo de software.
-						Me apasiona el código y las nuevas tecnologías. Multidisciplinario y autodidacta. Con experiencia en gestión de proyectos que integren electrónica, mecánica, informática y/o automatización.
-					</p>
 				</div>
 			</div>
-			<div class="row center">
-				<div class="col-lg-6">
+			<br>
+			<div class="row">
+				<div class="col-md-10">
 					<p>
-						Soy estudiante avanzado de Ing. en Mecatrónica con especialización en desarrollo de software.
+						Soy estudiante avanzado de Ing. en Mecatrónica con especialización en el area de software.
 						Me apasiona el código y las nuevas tecnologías. Multidisciplinario y autodidacta. Con experiencia en gestión de proyectos que integren electrónica, mecánica, informática y/o automatización.
 					</p>
 				</div>
 			</div>
 		
-			<hr class="featurette-divider">
+			<hr class="featurette-divider" id="skillspage">
 
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h1>Habilidades</h1>
 				</div>
 			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm">
+					<h3>Personales:</h3>
+					<ul class="list-group">
+						<li>Resolución de Problemas</li>
+						<li>Trabajo en Equipo</li>
+						<li>Comunicación y Liderazgo</li>
+						<li>Pensamiento Crítico</li>
+						<li>Autodidacta</li>
+						<li>Interdisciplinario</li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<h3>Técnicas:</h3>
+					<ul class="list-group">
+						<li><b>Python</b> ( GUI | OOP | DB )</li>
+						<li><b>Tensorflow</b>, Keras ( IA & ML )</li>
+						<li><b>Front-end</b> ( HTML | CSS | JS )</li>
+						<li>Bootstrap Framework</li>
+						<li>Version Control – <b>Git</b> | <b>Github</b></li>
+						<li>Google Colab</li>
+						<br>
+						<li><b>Matlab</b> (Robotics & Science)</li>
+						<li><b>Simulink</b> (Simulation)</li>
+						<li><b>SCADA</b> & <b>PLC</b></li>
+						<li>Diseño y Simulación <b>Mecánica</b> (SolidEdge)</li>
+						<li>Diseño y Simulación <b>Electrónica</b> (Proteus)</li>
+						<li>C y C++ en ATMEL Studio (Microcontroladores)</li>
+						<li>Java - Processing - Unity - Realidad Virtual</li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<h3>Idiomas:</h3>
+					<ul>
+						<li><b>Español:</b> Nativo</li>
+						<li><b>Ingles:</b> Upper-Intermediate (B2)</li>
+						<li>6 años en Master English Center</li>
+					</ul>
+				</div>
+			  </div>
 		
-			<hr class="featurette-divider">
+			<hr class="featurette-divider" id="experiencepage">
 
 			<div class="row">
 				<div class="col-lg-12">
@@ -235,7 +287,7 @@
 				</div>
 			</div>
 		
-			<hr class="featurette-divider">
+			<hr class="featurette-divider" id="studypage">
 
 			<div class="row">
 				<div class="col-lg-12">
@@ -243,23 +295,14 @@
 				</div>
 			</div>
 		
-			<hr class="featurette-divider">
+			<hr class="featurette-divider" id="projectspage">
 
 			<div class="row">
 				<div class="col-lg-12">
 					<h1>Proyectos</h1>
 				</div>
 			</div>
-		
-			<hr class="featurette-divider">
-
-			<div class="row">
-				<div class="col-lg-12">
-					<h1>Contacto</h1>
-				</div>
-			</div>
-	  
-
+			<br><br><br>
 			<!-- Three columns of text below the carousel -->
 			<div class="row">
 				<div class="col-lg-4">
@@ -284,6 +327,14 @@
 				<p><a class="btn btn-secondary" href="#">View details »</a></p>
 				</div><!-- /.col-lg-4 -->
 			</div><!-- /.row -->
+		
+			<hr class="featurette-divider" id="contactpage">
+
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Contacto</h1>
+				</div>
+			</div>
 		
 		
 			<!-- START THE FEATURETTES -->
@@ -352,12 +403,16 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 	
-	
 	<!-- Script para mostrar los popovers en toda la pagina -->
 	<script>
 		$(function () {
-			$('[data-toggle="popover"]').popover()
+			$('[data-toggle="popover"]').popover();
 		})
+		$('.pop').popover().click(function () {
+			setTimeout(function () {
+				$('.pop').popover('hide');
+			}, 2000);
+		});
 	</script>
 
 </body>
