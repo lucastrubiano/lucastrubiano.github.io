@@ -37,6 +37,13 @@ body {
     cursor: pointer !important;
 }
 
+.card-columns{
+    column-count: 2;
+}
+.chicasprog{
+    column-count: 4 !important;
+}
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -64,7 +71,7 @@ body {
     font-weight: 300;
     line-height: 1;
     letter-spacing: -.05rem;
-} 
+}
   
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -82,13 +89,27 @@ body {
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 990px) {
     .profileimg{
         margin-top: 20px;
     }
-    .marketing{
-        width: 85%;
+    .card-columns{
+        column-count: 1;
     }
+}
+@media only screen and (max-width: 770px) {
+    .habilidades-group{
+        margin-top: 30px;
+    }
+    .chicasprog{
+        column-count: 2 !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /* .marketing{
+        width: 85%;
+    } */
 }
 
 @media (min-width: 62em) {
