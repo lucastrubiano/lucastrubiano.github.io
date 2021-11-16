@@ -43,6 +43,18 @@ body {
     column-count: 4 !important;
 }
 
+.gallery-img{
+    transition: 1s;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-img:hover{
+    /* filter: grayscale(100%); */
+    transform: scale(1.3);
+    /* cursor: pointer; */
+}
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
