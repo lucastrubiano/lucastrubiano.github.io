@@ -55,6 +55,11 @@ body {
     /* cursor: pointer; */
 }
 
+.socialfooter{
+    display: flex;
+    justify-content: center;
+}
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -117,11 +122,16 @@ body {
     }
 }
 
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 530px) {
     /* .marketing{
         width: 85%;
     } */
+    .socialfooter{
+        flex-direction: column;
+    }
 }
+
 
 @media (min-width: 62em) {
     .featurette-heading {
