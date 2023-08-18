@@ -49,7 +49,7 @@
 <body>
 
 	<!-- Header de la pagina -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
 		<a class="navbar-brand" href="#homepage">Portfolio</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -76,7 +76,7 @@
 				</li>
 				
 				<li class="nav-item" onclick="updateActiveNav(this)">
-					<a class="nav-link" href="#projectspage">Proyectos</a>
+					<a class="nav-link" href="#projectspage">Logros</a>
 				</li>
 
 				<li class="nav-item" onclick="updateActiveNav(this)">
@@ -88,22 +88,22 @@
 			<ul class="navbar-nav md-auto">
 
 				<li class="ms-3">
-					<a href="https://github.com/lucas-trubiano" target="_blank" class="badge text-muted social">
+					<a href="https://github.com/lucastrubiano" target="_blank" class="badge text-muted social">
 						<i class="fab fa-github fa-2x"></i>
 					</a>
 				</li>
 
 				<li class="ms-3">
-					<a href="https://www.linkedin.com/in/lucas-trubiano/" target="_blank" class="badge text-muted social">
+					<a href="https://www.linkedin.com/in/lucastrubiano/" target="_blank" class="badge text-muted social">
 						<i class="fab fa-linkedin fa-2x"></i>
 					</a>
 				</li>
 
-				<li class="ms-3">
+				<!-- <li class="ms-3">
 					<a href="https://www.instagram.com/lucastrubiano" target="_blank" class="badge text-muted social">
 						<i class="fab fa-instagram fa-2x"></i>
 					</a>
-				</li>
+				</li> -->
 			
 				<li class="ms-3">
 					<a href="https://api.whatsapp.com/send?phone=5492612514007" target="_blank" class="badge text-muted social">
@@ -117,13 +117,12 @@
 		</div>
 	</nav>
 
-	<section class="py-4 text-center container-fluid bg-dark" id="homepage">
+	<section class="py-4 text-center container-fluid" style="background-color: black;" id="homepage">
 
 		<br>
 
-		<div class="row py-lg-5">
+		<div class="row pt-lg-5">
 			<div class="col-lg-6 col-md-8 mx-auto">
-
 				<svg class="bd-placeholder-img rounded-circle profileimg"
 					width="150" 
 					height="150" 
@@ -134,32 +133,43 @@
 					focusable="false"
 					style="background-image: url(imgs/profile.jpg);">
 				</svg>
-
-				<br><br>
-
+				<br>
+				<br>
 				<h1 class="fw-light text-white">Lucas Trubiano</h1>
-
+			</div>
+		</div>
+		
+		<div class="row py-lg-1">
+			<div class="col-lg-8 col-md-8 mx-auto">
+				<img src="/imgs/background.png" alt="" style="width: 100%;">
+			</div>
+		</div>
+		
+		<div class="row pb-lg-5">
+			<div class="col-lg-6 col-md-8 mx-auto">
+				<!-- <br>
+				<h1 class="fw-light text-white">Lucas Trubiano</h1> -->
 				<br>
 
 				<p class="lead text-muted">
 					<svg style="width:24px;height:24px" viewBox="0 0 24 24">
 						<path fill="currentColor" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
 					</svg>
-					Estudiante Avanz. <b>Ingeniería en Mecatrónica</b> - <a href="https://ingenieria.uncuyo.edu.ar/" target="_blank">FING UNCuyo</a>
+					Estudiante Avanz. de <b>Ingeniería en Mecatrónica</b> - <a href="https://ingenieria.uncuyo.edu.ar/" target="_blank">FING UNCuyo</a>
 				</p>
 
 				<p class="lead text-muted">
 					<svg style="width:24px;height:24px" viewBox="0 0 24 24">
 						<path fill="currentColor" d="M19.14,7.5A2.86,2.86 0 0,1 22,10.36V14.14A2.86,2.86 0 0,1 19.14,17H12C12,17.39 12.32,17.96 12.71,17.96H17V19.64A2.86,2.86 0 0,1 14.14,22.5H9.86A2.86,2.86 0 0,1 7,19.64V15.89C7,14.31 8.28,13.04 9.86,13.04H15.11C16.69,13.04 17.96,11.76 17.96,10.18V7.5H19.14M14.86,19.29C14.46,19.29 14.14,19.59 14.14,20.18C14.14,20.77 14.46,20.89 14.86,20.89A0.71,0.71 0 0,0 15.57,20.18C15.57,19.59 15.25,19.29 14.86,19.29M4.86,17.5C3.28,17.5 2,16.22 2,14.64V10.86C2,9.28 3.28,8 4.86,8H12C12,7.61 11.68,7.04 11.29,7.04H7V5.36C7,3.78 8.28,2.5 9.86,2.5H14.14C15.72,2.5 17,3.78 17,5.36V9.11C17,10.69 15.72,11.96 14.14,11.96H8.89C7.31,11.96 6.04,13.24 6.04,14.82V17.5H4.86M9.14,5.71C9.54,5.71 9.86,5.41 9.86,4.82C9.86,4.23 9.54,4.11 9.14,4.11C8.75,4.11 8.43,4.23 8.43,4.82C8.43,5.41 8.75,5.71 9.14,5.71Z" />
 					</svg>
-					<b>Python Developer</b> & <b>Big Data Engineer</b>
+					<b>Big Data Engineer</b> & <b>Python Developer</b>
 				</p>
 
 				<p class="lead text-muted">
 					<svg style="width:24px;height:24px" viewBox="0 0 24 24">
 						<path fill="currentColor" d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" />
 					</svg>
-					Proyectos <b>IA | Big Data | Web</b>
+					<b>Big Data | IA | Cloud Computing</b>
 				</p>
 
 				<p class="lead text-muted">
@@ -171,7 +181,16 @@
 					data-toggle="popover"
 					data-placement="right"
 					data-content="Correo copiado!">
-					<span id="mymail1">lucas.trubiano@gmail.com</span>
+					<i class="fas fa-at"></i> &nbsp; <span id="mymail1">lucas.trubiano@gmail.com</span>
+				</a>
+				<!-- <br> -->
+				<a 	
+					class="badge badge-primary mail pop"
+					onclick="copyToClipboard('#myphone1')"
+					data-toggle="popover"
+					data-placement="right"
+					data-content="Teléfono copiado!">
+					<i class="fas fa-phone-alt"></i> &nbsp; <span id="myphone1">+54 9 261 251 4007</span>
 				</a>
 				<p id="presentationpage"></p>
 			</div>
@@ -187,23 +206,40 @@
 		<!-- Wrap the rest of the page in another container to center all the content. -->
 	  
 		<div class="container marketing">
+			
+			<br>
 
-			<div class="row">
-				<div class="col-md-12">
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-10">
 					<h1>Presentación</h1>
 				</div>
 			</div>
 			<br>
-			<div class="row">
+			<div class="row d-flex justify-content-center">
 				<div class="col-md-10">
 					<p>
+						Como un <b>apasionado</b> total por la <b>tecnología</b>, mi principal misión es facilitarla a usuarios y empresas para ayudar a resolver sus problemas y desafíos.
+						Explorando <b>nuevas</b>, <b>mejores</b> y más <b>creativas</b> soluciones utilizando mis <b>habilidades</b> para crear un impacto significativo.
+					</p>
+					<p>
+						Estoy convencido de que la mejor forma de aprender algo es <b>practicando</b> y <b>enseñando</b>, y que la <b>innovación</b> es un proceso <b>colaborativo</b>.
+						Por esta razón, disfruto enormemente realizando actividades que me permiten interactuar con la comunidad y compartir todo lo que he aprendido.
+						Esto me ayuda a mantenerme <b>actualizado</b>, <b>motivado</b> y en <b>constante crecimiento</b> para desarrollar mis habilidades.
+					</p>
+					<p>
+						Dentro del <b>mundo tech</b>, las áreas que más me interesan debido a su <b>alto potencial</b> para generar impactos son
+						<br>
+						el <b>Big Data</b>, la <b>IA</b> y el <b>Cloud Computing</b>.
+					</p>
+
+					<!-- <p>
 						Soy estudiante avanzado de Ing. en Mecatrónica con especialización (y mucho entusiasmo) en el área de software.
 						Me encanta y apasiona el software y las nuevas tecnologías por esto es que busco continuamente colaborar en proyectos de este estilo.
 					</p>
 					<p>
 						Multidisciplinario y autodidacta, siempre con ganas de entender de forma completa e integral los proyectos y soluciones en los que participo.
 						Con experiencia en gestión de proyectos y de equipos, me encanta poder colaborar con colegas, aprender de ellos y enseñar los conocimientos que tengo.
-					</p>
+					</p> -->
 				</div>
 			</div>
 		
@@ -214,41 +250,44 @@
 					<h1>Habilidades</h1>
 				</div>
 			</div>
-
 			<br>
-			
 			<div class="row">
 				<div class="col-md habilidades-group">
-					<h3>Personales:</h3>
+					<h3>Interpersonales:</h3>
 					<ul class="list-group ml-4">
 						<li>Resolución de Problemas</li>
-						<li>Trabajo en Equipo</li>
-						<li>Comunicación y Liderazgo</li>
 						<li>Pensamiento Crítico</li>
+						<li>Comunicación</li>
+						<li>Trabajo en Equipo</li>
 						<li>Autodidacta</li>
-						<li>Interdisciplinario</li>
+						<li>Enseñanza</li>
 					</ul>
 				</div>
 				<div class="col-md habilidades-group">
 					<h3>Técnicas:</h3>
 					<ul class="list-group ml-4">
-						<li><b>Big Data AWS</b> ( PySpark | Python | Airflow | AWS | S3 | Hive | Presto | DBeaver )</li>
-						<li><b>Big Data Cloudera</b> ( Spark | Scala | NiFi | Hive | Impala | HUE )</li>
-						<li><b>Django</b> ( BD | MVT | CBV )</li>
-						<li><b>Python</b> ( BD | POO/OOP | Avanzado )</li>
+
+						<li><b>Python</b> (también Scala y Java)</li>
+						<li><b>Spark & PySpark</b> (también Pandas)</li>
+						<li><b>SQL</b> (Hive, Impala, Presto, Postgres)</li>
+						<li><b>Ecosistema Hadoop</b> (HDFS, HBase)</li>
+						<li><b>Apache Airflow</b>, NiFi</li>
+						<li><b>Apache Kafka</b>, AWS Kinesis</li>
+						<li><b>Django</b>, Django Rest Framework</li>
+						<li><b>AWS</b> (S3, EC2, Redshift, etc.)</li>
+						<li><b>Git, Linux y Docker</b></li>
+
+						<!-- <br>
 						<li><b>Tensorflow, Pandas</b> ( IA & ML )</li>
-						<li><b>Steaming</b> ( MQTT | Kafka )</li>
-						<li>Version Control – <b>Git | Github | Gitlab | Bitbucket</b></li>
 						<li><b>Front-End</b> ( HTML | CSS | JS )</li>
 						<li>Bootstrap Framework</li>
-						<br>
 						<li><b>Matlab</b> (Robotics & Science)</li>
 						<li><b>Simulink</b> (Simulation)</li>
 						<li><b>SCADA</b> & <b>PLC</b> (Automatización)</li>
 						<li>Diseño y Simulación <b>Mecánica</b> (SolidEdge)</li>
 						<li>Diseño y Simulación <b>Electrónica</b> (Proteus)</li>
 						<li>C y C++ en ATMEL Studio (Microcontroladores)</li>
-						<li>Java - Processing - Unity - Realidad Virtual</li>
+						<li>Java - Processing - Unity - Realidad Virtual</li> -->
 					</ul>
 				</div>
 				<div class="col-md habilidades-group">
@@ -256,6 +295,7 @@
 					<ul class=" ml-4">
 						<li><b>Español:</b> Nativo</li>
 						<li><b>Ingles:</b> Upper-Intermediate (B2)</li>
+						<li>2 years at UNCuyo from A1 to B2</li>
 						<li>6 years at Master English Center</li>
 					</ul>
 				</div>
@@ -268,9 +308,7 @@
 					<h1>Experiencia Laboral</h1>
 				</div>
 			</div>
-
 			<br>
-
 			<div class="row">
 				<div class="col-md-12">
 					<div class="accordion" id="accordionExample">
@@ -284,29 +322,49 @@
 											class="btn btn-link btn-block text-left"
 											type="button"
 											data-toggle="collapse"
-											data-target="#collapseSantander"
+											data-target="#collapseCoder2"
 											aria-expanded="true"
-											aria-controls="collapseSantander">
-											<i class="fas fa-server"></i> <b>Data Engineer</b> @ Santander Tecnología - JUL 2022 / Actualmente
+											aria-controls="collapseCoder2">
+											<i class="fas fa-database fa-lg"></i> &nbsp; <b>Profesor Data Engineering</b> @ Coderhouse - ABR 2023 / Actualmente
 										</button>
 									</span>
 								</h2>
 							</div>
 					  
-							<div id="collapseSantander" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
+							<div id="collapseCoder2" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
 								<div class="card-body">
 									<p>
-										Desarrollo de pipelines ETL, DAGs, migraciones y soluciones de Big Data para <a href="https://www.santander.com/es/trabaja-con-nosotros/-Que-impacto-quieres-tener-/tecnologia">Santander Tecnología</a>. Acá estoy en la parte de migración de datos y pipelines desde Cloudera a AWS y migración de códigos de Scala a Python. Algunas de las tecnologías utilizadas son principalmente:
+										Enseñando <b>Python</b>, <b>SQL</b> y <b>Linux</b> para crear soluciones de <b>Big Data</b> en el curso de <a href="https://www.coderhouse.com/online/data-engineering-flex">Date Engineering Flex de Coderhouse</a>.
+										Realizamos proyectos de creación de <b>ETLs</b>, administración de arquitecturas de <b>Data Warehousing</b> y <b>Data Lakes</b>, procesamiento de datos en <b>Batch</b> y <b>Streaming</b>, optimización de consultas <b>SQL</b>, etc.
+										<!-- Dictado del Curso de Python de <a href="https://www.coderhouse.com/">Coder House</a> a cargo de una comisión de más de 200 personas y la coordinación de un equipo de 9 tutores. El curso está orientado a desarrollo web backend con el framework Django y temas de Python desde básico hasta avanzado. Incluyendo temas como: -->
 									</p>
-									<ul class="ml-5">
-										<li><b>AWS (Amazon Web Services) - S3</b></li>
-										<li><b>Apache Spark - Airflow - PySpark</b></li>
-										<li><b>DBeaver - Hive - Presto</b></li>
-										<li><b>Linux</b></li>
-									</ul>
+									<!-- <ul class="ml-5">
+										<li><b>Variables y Tipos de Datos</b></li>
+										<li><b>Controladores de Flujo</b></li>
+										<li><b>Funciones, Manejo de Archivos, Errores y Excepciones</b></li>
+										<li><b>Programación Funcional y Modular, Creación de paquetes</b></li>
+										<li><b>Git y Github</b></li>
+										<li><b>Orientación a Objetos, Herencia, Polimorfismo, UML</b></li>
+										<li><b>Django, MVT, CBV, BD, uso de forms, messages, etc.</b></li>
+									</ul> -->
+									<span class="badge badge-pill badge-dark">Python</span>
+									<span class="badge badge-pill badge-dark">SQL</span>
+									<span class="badge badge-pill badge-dark">Linux</span>
+									<span class="badge badge-pill badge-dark">AWS</span>
+									<span class="badge badge-pill badge-dark">Bases de Datos</span>
+									<span class="badge badge-pill badge-dark">Postgres</span>
+									<span class="badge badge-pill badge-dark">Modelado Dimensional</span>
+									<span class="badge badge-pill badge-dark">Data Lakes (S3)</span>
+									<span class="badge badge-pill badge-dark">Data Warehouse (Redshift)</span>
+									<span class="badge badge-pill badge-dark">Apache Spark</span>
+									<span class="badge badge-pill badge-dark">Apache Airflow</span>
+									<span class="badge badge-pill badge-dark">Apache Kafka</span>
+									<span class="badge badge-pill badge-dark">Docker</span>
 								</div>
 							</div>
 						</div>
+						
+
 						
 						<div class="card">
 							<div class="card-header" id="heading0">
@@ -316,29 +374,76 @@
 											class="btn btn-link btn-block text-left"
 											type="button"
 											data-toggle="collapse"
-											data-target="#collapseCoder"
+											data-target="#collapseSantander"
 											aria-expanded="true"
-											aria-controls="collapseCoder">
-											<i class="fab fa-python fa-lg"></i> <b>Profesor Python/Django</b> @ Coder House - ABR 2022 / JUL 2022
+											aria-controls="collapseSantander">
+											<i class="fas fa-landmark fa-lg"></i> &nbsp; <b>Data Engineer</b> @ Santander Tecnología Argentina - JUL 2022 / Actualmente
 										</button>
 									</span>
 								</h2>
 							</div>
 					  
-							<div id="collapseCoder" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
+							<div id="collapseSantander" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
 								<div class="card-body">
 									<p>
-										Dictado del Curso de Python de <a href="https://www.coderhouse.com/">Coder House</a> a cargo de una comisión de más de 200 personas y la coordinación de un equipo de 9 tutores. El curso está orientado a desarrollo web backend con el framework Django y temas de Python desde básico hasta avanzado. Incluyendo temas como:
+										Desarrollo, migración y refactorización de data pipelines del <a href="https://www.santander.com.ar/">Santander</a> de un stack <b>Scala + Spark + Cloudera</b> a una arquitectura <b>Python + PySpark + AWS</b>. Creación de <b>DAGs</b> y automatizaciones en <b>Apache Airflow</b>. Actualmente encargado de <b>IFRS9</b> (International Financial Reporting Standard).
+									</p>
+									<!-- <p>
+										Desarrollo de pipelines ETL, DAGs, migraciones y soluciones de Big Data para <a href="https://www.santander.com/es/trabaja-con-nosotros/-Que-impacto-quieres-tener-/tecnologia">Santander Tecnología</a>. Acá estoy en la parte de migración de datos y pipelines desde Cloudera a AWS y migración de códigos de Scala a Python. Algunas de las tecnologías utilizadas son principalmente:
 									</p>
 									<ul class="ml-5">
-										<li><b>Variables y Tipos de Datos</b></li>
-										<li><b>Controladores de Flujo</b></li>
-										<li><b>Funciones, Manejo de Archivos, Errores y Excepciones</b></li>
-										<li><b>Programación Funcional y Modular, Creación de paquetes</b></li>
-										<li><b>Git y Github</b></li>
-										<li><b>Orientación a Objetos, Herencia, Polimorfismo, UML</b></li>
-										<li><b>Django, MVT, CBV, BD, uso de forms, messages, etc.</b></li>
-									</ul>
+										<li><b>AWS (Amazon Web Services) - S3</b></li>
+										<li><b>Apache Spark - Airflow - PySpark</b></li>
+										<li><b>DBeaver - Hive - Presto</b></li>
+										<li><b>Linux</b></li>
+									</ul> -->
+									<span class="badge badge-pill badge-dark">Python</span>
+									<span class="badge badge-pill badge-dark">Scala</span>
+									<span class="badge badge-pill badge-dark">Java</span>
+									<span class="badge badge-pill badge-dark">SQL</span>
+									<span class="badge badge-pill badge-dark">Linux</span>
+									<span class="badge badge-pill badge-dark">AWS</span>
+									<span class="badge badge-pill badge-dark">Cloudera</span>
+									<span class="badge badge-pill badge-dark">Hive</span>
+									<span class="badge badge-pill badge-dark">Presto</span>
+									<span class="badge badge-pill badge-dark">Datalake S3</span>
+									<span class="badge badge-pill badge-dark">Apache Spark</span>
+									<span class="badge badge-pill badge-dark">Apache Airflow</span>
+									<span class="badge badge-pill badge-dark">Apache HBase</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="heading0">
+								<h2 class="mb-0">
+									<span>
+										<button
+											class="btn btn-link btn-block text-left"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseCoder1"
+											aria-expanded="true"
+											aria-controls="collapseCoder1">
+											<i class="fab fa-python fa-lg"></i> &nbsp; <b>Profesor de Python y Django</b> @ Coderhouse - ABR 2022 / JUL 2022
+										</button>
+									</span>
+								</h2>
+							</div>
+					  
+							<div id="collapseCoder1" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
+								<div class="card-body">
+									<p>
+										Enseñando a <b>más de 200 estudiantes</b> de todo LATAM sobre temas como <b>Python, POO, Git y Django</b> para el <a href="https://www.coderhouse.com/online/python">Curso de Python de Coderhouse</a>. Coordinando un equipo de <b>9 tutores</b>. Corrección de +50 proyectos finales. Calificación: 4.8 / 5
+									</p>
+									<span class="badge badge-pill badge-dark">Fundamentos de Programación</span>
+									<span class="badge badge-pill badge-dark">Python</span>
+									<span class="badge badge-pill badge-dark">POO</span>
+									<span class="badge badge-pill badge-dark">Git y Github</span>
+									<span class="badge badge-pill badge-dark">Django Framework</span>
+									<span class="badge badge-pill badge-dark">CRUD</span>
+									<span class="badge badge-pill badge-dark">Class Based Views</span>
+									<span class="badge badge-pill badge-dark">Model Forms</span>
 								</div>
 							</div>
 						</div>
@@ -354,7 +459,8 @@
 											data-target="#collapseNova"
 											aria-expanded="true"
 											aria-controls="collapseNova">
-											<i class="fas fa-database"></i> <b>Big Data Engineer</b> @ Novakorp - ENE 2022 / JUN 2022
+											<i class="fas fa-server fa-lg"></i> &nbsp; <b>Big Data Engineer</b> @ Novakorp - ENE 2022 / JUN 2022
+											<!-- <i class="fas fa-database"></i> -->
 										</button>
 									</span>
 								</h2>
@@ -363,16 +469,14 @@
 							<div id="collapseNova" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
 								<div class="card-body">
 									<p>
-										Desarrollo de pipelines ETL y soluciones de Big Data para <a href="https://www.close-upinternational.com/">Close Up International</a> cliente internacional (Brasil) que tenía <a href="https://www.novakorp.io/">Novakorp</a>. Acá realicé desarrollo de nuevos productos, refactor de códigos y pipelines, migración de datos, etc. Las tecnologías utilizadas fueron:
+										Desarrollo de pipelines ETL y soluciones de Big Data para <a href="https://www.close-upinternational.com/">Close Up International</a> un cliente de Brasil que tenía <a href="https://www.novakorp.io/">Novakorp</a>. Acá realicé desarrollo de nuevos productos, refactor de códigos y pipelines, migración de datos, etc. Las tecnologías utilizadas fueron:
 									</p>
-									<ul class="ml-5">
-										<li><b>Cloudera</b></li>
-										<li><b>Apache Spark</b> - Distribute Processing</li>
-										<li><b>HDFS</b> - Hadoop Distribute File System</li>
-										<li><b>HUE - Hive - Impala</b></li>
-										<li><b>Apache Kafka - Apache NiFi</b></li>
-										<li><b>Scala - Python</b></li>
-									</ul>
+									<span class="badge badge-pill badge-dark">Python</span>
+									<span class="badge badge-pill badge-dark">Scala</span>
+									<span class="badge badge-pill badge-dark">Apache Spark</span>
+									<span class="badge badge-pill badge-dark">Hadoop (HDFS, HUE, Hive)</span>
+									<span class="badge badge-pill badge-dark">Apache NiFi</span>
+									<span class="badge badge-pill badge-dark">Cloudera</span>
 								</div>
 							</div>
 						</div>
@@ -385,16 +489,16 @@
 											class="btn btn-link btn-block text-left"
 											type="button"
 											data-toggle="collapse"
-											data-target="#collapse0"
+											data-target="#collapseAppGym"
 											aria-expanded="true"
-											aria-controls="collapse0">
-											<i class="fab fa-python fa-lg"></i> <b>Desarrollador Python</b> @ Freelance - AGO 2021 / ENE 2022
+											aria-controls="collapseAppGym">
+											<i class="fas fa-dumbbell fa-lg"></i> &nbsp; <b>Python Developer</b> Freelance @ App Gym - AGO 2021 / ENE 2022
 										</button>
 									</span>
 								</h2>
 							</div>
 					  
-							<div id="collapse0" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
+							<div id="collapseAppGym" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
 								<div class="card-body">
 									<p>
 										Diseño y programación de <b>App Gym</b> una aplicación para gestionar gimnasios. Desarrollada con Python utilizando:
@@ -497,7 +601,7 @@
 							</div>
 						</div>
 
-						<div class="card">
+						<!-- <div class="card">
 							<div class="card-header" id="heading1">
 								<h2 class="mb-0">
 									<span>
@@ -541,7 +645,7 @@
 									</p>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 						<div class="card">
 							<div class="card-header" id="heading2">
@@ -551,16 +655,16 @@
 											class="btn btn-link btn-block text-left collapsed"
 											type="button"
 											data-toggle="collapse"
-											data-target="#collapse2"
+											data-target="#collapseCDF"
 											aria-expanded="true"
-											aria-controls="collapse2">
-											<i class="fas fa-chalkboard-teacher fa-lg"></i><b> Profesor Python y otros</b> @ Casa del Futuro Godoy Cruz - AGO 2020 / AGO 2021
+											aria-controls="collapseCDF">
+											<i class="fas fa-chalkboard-teacher fa-lg"></i>  &nbsp; <b>Profesor Python</b> @ Casa del Futuro Godoy Cruz - AGO 2020 / AGO 2021
 										</button>
 									</span>
 								</h2>
 							</div>
 					  
-							<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+							<div id="collapseCDF" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
 								<div class="card-body">
 									<p>
 										Mis tareas fueron crear y dictar los cursos de <b>programación</b> de Casa del Futuro Godoy Cruz. Estre ellos los cursos de <b>Python Nivel Inicial e Intermedio</b> en los siguientes periodos:
@@ -611,16 +715,16 @@
 											class="btn btn-link btn-block text-left collapsed"
 											type="button"
 											data-toggle="collapse"
-											data-target="#collapse3"
+											data-target="#collapseCCP"
 											aria-expanded="true"
-											aria-controls="collapse3">
-											<i class="fas fa-users fa-lg"></i></i><b> Mentor</b> @ Club de Chicas Programadoras - OCT 2020 / DIC 2020
+											aria-controls="collapseCCP">
+											<i class="fas fa-users fa-lg"></i> &nbsp; <b> Mentor</b> @ Club de Chicas Programadoras - OCT 2020 / DIC 2020
 										</button>
 									</span>
 								</h2>
 							</div>
 					  
-							<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+							<div id="collapseCCP" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
 								<div class="card-body">
 									<p>
 										Como mentor y con rol técnico del club de chicas programadoras, me toco guiar a chicas para introducirse en el mundo IT. Mis tareas fueron:
@@ -664,16 +768,16 @@
 											class="btn btn-link btn-block text-left collapsed"
 											type="button"
 											data-toggle="collapse"
-											data-target="#collapse4"
+											data-target="#collapseIxD"
 											aria-expanded="true"
-											aria-controls="collapse4">
-											<i class="fas fa-user-check fa-lg"></i><b> Facilitador de Fabricación Digital y Róbotica</b> @ Infinito por Descubrir Mendoza - OCT 2019 / OCT 2020
+											aria-controls="collapseIxD">
+											<i class="fas fa-user-check fa-lg"></i> &nbsp; <b>Facilitador de Róbotica</b> @ Infinito por Descubrir Mendoza - OCT 2019 / OCT 2020
 										</button>
 									</span>
 								</h2>
 							</div>
 					  
-							<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+							<div id="collapseIxD" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
 								<div class="card-body">
 									<p>
 										Me desempeñe como facilitador del Laboratorio de Fabricación Digital y Robótica en tareas como:
@@ -713,7 +817,7 @@
 					<div class="card border-primary">
 						<h5 class="card-header bg-primary text-white"><b>Ingeniería en Mecatrónica [2017-Present]</b></h5>
 						<div class="card-body">
-							<h6 class="card-title">Estudiante Avanzado ( 5° Año terminado )</h6>
+							<h6 class="card-title">Estudiante Avanzado (sin materias, sólo tesis)</h6>
 							<!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
 							<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
 							<footer class="blockquote-footer"><a href="https://ingenieria.uncuyo.edu.ar/" target="_blank">Facultad de Ingeniería UNCuyo</a> | Mendoza, Argentina</footer>
@@ -727,7 +831,31 @@
 				<div class="col-lg-1"></div>
 				<div class="col-lg-10">
 					<div class="card border-primary">
-						<h5 class="card-header"><b>Curso:</b> Desarrollo Web Full-Stack con Python y Flask. (6 meses)</h5>
+						<h5 class="card-header"><b>Beca:</b> Business for All 2023 - Hardvard Business School Publishing</h5>
+						<div class="card-body">
+							<h6 class="card-title">Soft Skills Course, some topics are:</h6>
+							<ul class="ml-5">
+								<li>Career Management</li>
+								<li>Decision Making</li>
+								<li>Difficult Interactions</li>
+								<li>Persuading Others</li>
+								<li>Stress Management</li>
+								<li>Time Management</li>
+							</ul>
+							<!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+							<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+							<footer class="blockquote-footer"><a href="https://hbsp.harvard.edu/student/" target="_blank">Hardvard Business Publishing Education</a></footer>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-10">
+					<div class="card">
+						<h5 class="card-header"><b>Curso:</b> Desarrollo Web Full-Stack con Python y Flask.</h5>
 						<div class="card-body">
 							<h6 class="card-title">1° Parte: <b>Front-end</b> HTML-CSS-JS-Bootstrap-Vue.</h6>
 							<h6 class="card-title">2° Parte: <b>Back-end</b> con Python y Flask.</h6>
@@ -776,7 +904,7 @@
 
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>Proyectos y Menciones</h1>
+					<h1>Logros y Menciones</h1>
 				</div>
 			</div>
 			<br><br><br>
@@ -1022,7 +1150,7 @@
 
 	<br><br><br>
 
-	<footer class="container-fluid text-center bg-dark text-white" id="contactpage">
+	<footer class="container-fluid text-center text-white" style="background-color: black;" id="contactpage">
 		
 		<!-- <hr class="featurette-divider"> -->
 		<br><br>
@@ -1044,19 +1172,19 @@
 					data-toggle="popover"
 					data-placement="right"
 					data-content="Correo copiado!">
-					<i class="fas fa-at"></i>  <span id="mymail2" style="font-size: 110%;">lucas.trubiano@gmail.com</span>
+					<i class="fas fa-at"></i> &nbsp; <span id="mymail2" style="font-size: 115%;">lucas.trubiano@gmail.com</span>
 				</a>
 			</div>
 			<br><br>
 			<div class="col-lg-12">
-				<!-- Email: -->
+				<!-- Phone: -->
 				<a 	
 					class="badge badge-primary mail pop"
-					onclick="copyToClipboard('#myphone')"
+					onclick="copyToClipboard('#myphone2')"
 					data-toggle="popover"
 					data-placement="right"
 					data-content="Teléfono copiado!">
-					<i class="fas fa-phone-alt"></i>  <span id="myphone" style="font-size: 110%;">2612514007</span>
+					<i class="fas fa-phone-alt"></i> &nbsp; <span id="myphone2" style="font-size: 115%;">+54 9 261 251 4007</span>
 				</a>
 			</div>
 		</div>
@@ -1077,23 +1205,23 @@
 				</a>
 			</li>
 			<li class="ms-3 ml-3 mr-3">
-				<a href="https://github.com/lucas-trubiano" target="_blank" class="badge text-muted social">
+				<a href="https://github.com/lucastrubiano" target="_blank" class="badge text-muted social">
 					<i class="fab fa-github fa-2x"></i>
 					<h5>GitHub</h5>
 				</a>
 			</li>
 			<li class="ms-3 ml-3 mr-3">
-				<a href="https://www.linkedin.com/in/lucas-trubiano/" target="_blank" class="badge text-muted social">
+				<a href="https://www.linkedin.com/in/lucastrubiano/" target="_blank" class="badge text-muted social">
 					<i class="fab fa-linkedin fa-2x"></i>
 					<h5>LinkedIn</h5>
 				</a>
 			</li>
-			<li class="ms-3 ml-3 mr-3">
+			<!-- <li class="ms-3 ml-3 mr-3">
 				<a href="https://www.instagram.com/lucastrubiano" target="_blank" class="badge text-muted social">
 					<i class="fab fa-instagram fa-2x"></i>
 					<h5>Instagram</h5>
 				</a>
-			</li>
+			</li> -->
 		</ul>
 		<!-- <br><br> -->
 
